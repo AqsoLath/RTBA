@@ -1,0 +1,10 @@
+1. buat about us V
+2. buat program kerja
+3. buat kolom untuk donasi 
+4. ambil dari google maps untuk alamat masjid
+5. buat sasaran atau target belajar
+6. benerin nomer whatsapp di kontak
+
+ngide
+1. minta foto untuk galeri
+2. minta file pendaftaran agar bisa didownload

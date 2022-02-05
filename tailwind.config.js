@@ -22,7 +22,8 @@ module.exports = {
             'aku': '1px 1px 1px #333',
         },
         fontFamily: {
-            bree: "'Bree Serif', serif"
+            bree: "'Bree Serif', serif",
+            inter: "'Inter', sans-serif"
         }
     }
   },

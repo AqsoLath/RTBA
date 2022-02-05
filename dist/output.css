@@ -549,10 +549,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.5rem;
 }
 
-.m-1 {
-  margin: 0.25rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -568,6 +564,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -580,12 +586,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .w-24 {
@@ -598,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-96 {
   width: 24rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .grid-cols-1 {
@@ -652,6 +670,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-ungu1 {
   --tw-border-opacity: 1;
   border-color: rgb(61 0 102 / var(--tw-border-opacity));
+}
+
+.border-hitam {
+  --tw-border-opacity: 1;
+  border-color: rgb(3 7 30 / var(--tw-border-opacity));
 }
 
 .border-b-ungu2 {
@@ -737,6 +760,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Bree Serif', serif;
 }
 
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -750,6 +777,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -777,6 +809,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-emas2 {
   --tw-text-opacity: 1;
   color: rgb(255 213 0 / var(--tw-text-opacity));
+}
+
+.text-ungu4 {
+  --tw-text-opacity: 1;
+  color: rgb(154 1 206 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -819,12 +856,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 .hover\:text-emas1:hover {
   --tw-text-opacity: 1;
   color: rgb(253 197 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
+  .md\:h-96 {
+    height: 24rem;
+  }
+
   .md\:w-96 {
     width: 24rem;
   }
@@ -841,10 +884,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {

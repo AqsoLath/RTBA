@@ -30,6 +30,11 @@
         .my-float {
             margin-top: 16px;
         }
+
+        .ilang {
+            height: 0px;
+            transition: cubic-bezier(1, 0, 0, 1);
+        }
     </style>
 
     <title>Rumah Tahfiz Official Website</title>
@@ -42,16 +47,58 @@
 </head>
 
 <body class="font-inter">
-    <div class="nav  bg-ungu2 py-1 fixed top-0 right-0 left-0 z-10">
-        <div class="container mx-auto flex justify-between px-2">
-            <img src="image/logo1.png" alt="logo nav" class="w-24">
-            <a href="#" class="text-emas1 font-semibold hover:text-emas1 transition my-auto">Hubungi Kami</a>
+    <div class="nav bg-gradient-to-br from-ungu1 to-ungu4 py-1 fixed top-0 right-0 left-0 z-10 ">
+        <div class="container mx-auto flex justify-between items-center flex-col lg:flex-row">
+            <div class="flex justify-between p-2 items-center w-full">
+                <div>
+                    <img src="image/logo1.png" alt="logo nav" class="w-24">
+                </div>
+                <div>
+                    <button class="block lg:hidden" id="hamburger">
+                        <i class="fas fa-bars text-emas2 "></i>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full hidden lg:block" id="nav-links">
+                <div class="flex flex-col lg:flex-row py-2 border-t-2 border-t-ungu4 lg:border-t-0">
+                    <a href="#" class="mx-3 text-emas2 font-semibold py-1">Home</a>
+                    <a href="#" class="mx-3 text-emas2 font-semibold py-1">Home</a>
+                    <a href="#" class="mx-3 text-emas2 font-semibold py-1">Home</a>
+                    <a href="#" class="mx-3 text-emas2 font-semibold py-1">Home</a>
+                    <a href="#" class="mx-3 text-emas2 font-semibold py-1">Home</a>
+                </div>
+            </div>
         </div>
+        <!-- <div class="container w-full flex justify-between items-center px-2 mx-auto flex-col lg:flex-row">
+            <div class="flex justify-between w-full items-center border-b-2 border-b-ungu3 lg:border-b-0 py-1">
+                <img src="image/logo1.png" alt="logo nav" class="w-24">
+                <button>
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="lg:flex w-full">
+                <li class="my-auto mx-3">
+                    <a href="#">Home</a>
+                </li>
+                <li class="my-auto mx-3">
+                    <a href="#">About</a>
+                </li>
+                <li class="my-auto mx-3">
+                    <a href="#">Galeri</a>
+                </li>
+                <li class="my-auto mx-3">
+                    <a href="#">Donasi</a>
+                </li>
+                <li class="my-auto mx-3">
+                    <a href="#">Kontak</a>
+                </li>
+            </ul>
+        </div> -->
     </div>
     <div class="jumbotron bg-no-repeat bg-cover bg-center py-24 bg-gray-300 bg-hero3">
         <div class="container mx-auto ">
             <img src="image/logo2.png" alt="logo"
-                class="w-72 drop-shadow mx-auto bg-gray-300/50 rounded md:w-96 lg:w-auto">
+                class="w-72 h-auto drop-shadow mx-auto bg-gray-300/50 rounded md:w-96 lg:w-auto">
         </div>
     </div>
 
@@ -135,7 +182,7 @@
 
     <div class="paket container mx-auto ">
         <h2 class="subjudul">Kategori Kelas</h2>
-        <div class="mt-3 flex flex-col md:flex-row justify-around">
+        <div class="mt-3 flex flex-col lg:flex-row justify-around">
             <div class="px-4">
                 <h3 class="text-center text-emas1 font-bold text-2xl font-bree" style="text-shadow: 1px 1px 0px #333">
                     Kelas Takhosus</h3>
@@ -264,6 +311,15 @@
         target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
+
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const navLinks = document.querySelector("#nav-links");
+
+        hamburger.addEventListener('click', function () {
+            navLinks.classList.toggle('hidden');
+        })
+    </script>
 </body>
 
 </html>

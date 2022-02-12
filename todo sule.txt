@@ -2,9 +2,13 @@
 2. buat program kerja V
 3. buat kolom untuk donasi V
 4. ambil dari google maps untuk alamat masjid V
-5. buat sasaran atau target belajar 
+5. buat sasaran atau target belajar V
 6. benerin nomer whatsapp di kontak V
+7. benerin footer 
+8. benerin nav list V
+9. hapusin tombol wa V
+10. bener2in judul dan subjudul biar di layar komputer jadi bagus V
 
 ngide
-1. minta foto untuk galeri
+1. minta foto untuk galeri V
 2. minta file pendaftaran agar bisa didownload

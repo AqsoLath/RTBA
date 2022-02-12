@@ -8,7 +8,7 @@
     }
 
     .kartu {
-        @apply border-4 border-ungu2 rounded-md bg-ungu4 mx-3
+        @apply border-4 border-ungu2 rounded-md bg-gradient-to-b from-ungu1 to-ungu4 mx-3
     }
 }
 

@@ -3,8 +3,6 @@ module.exports = {
   theme: {
       extend: {
         backgroundImage: {
-            'hero': "url('../image/hero.jpg')",
-            'hero2': "url('../image/hero2.png')",
             'hero3': "url('../image/foto-bersama1.jpeg')",
         },
         colors: {
